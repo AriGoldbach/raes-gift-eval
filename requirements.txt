@@ -1,0 +1,18 @@
+# Components running on the main venv (Python 3.10):
+torch==2.5.1
+torchvision==0.20.1
+gluonts==0.15.1
+chronos-forecasting>=2.2.0
+uni2ts>=2.0.0
+tirex-ts[gluonts]
+huggingface_hub
+datasets
+pandas
+numpy<2.0
+scipy
+statsforecast
+salesforce-gift-eval
+
+# Toto-2.0 requires Python >=3.12; install in a separate venv:
+# pip install "toto-2 @ git+https://github.com/DataDog/toto.git#subdirectory=toto2"
+# pip install --no-deps -e .  # gift-eval, plus pandas, dotenv, datasets
